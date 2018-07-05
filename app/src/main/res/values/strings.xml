@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Settings</string>
     <string name="reset_key">reset_key</string>
-    <string name="language_key">lang_key</string>
+    <string name="salary_key">salary_key</string>
+    <string name="job_sector_key">job_key</string>
     <string name="auto_scan_boolean">true</string>
 
     <string name="quit_key">quit_key</string>
@@ -14,5 +15,13 @@
     <string name="hardware_summary">Disable:better stability.
                                     Decoding:may improve performance.
                                     Full: may improve performance further.</string>
+    <string name="privacy_key">privacy_key</string>
+    <string name="notification_key">notification_key</string>
+    <string name="delete_account_key">delete_account_key</string>
+    <string name="signout_key">signout_key</string>
+    <string name="share_key">share_key</string>
+    <string name="terms_text"><![CDATA[Terms & condition]]></string>
+    <string name="privacy_policy_key">privacy_policy_key</string>
+    <string name="terms_key">terms_key</string>
 
 </resources>

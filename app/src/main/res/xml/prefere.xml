@@ -2,48 +2,71 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory
-        android:title="Salary Per Hour"
-        android:key="pref_key_storage_settings">
-    <Preference
-        android:key="@string/language_key"
-        android:summary="System Default Language"
-        android:title="Language"
-        android:layout="@layout/demo"
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preference_text"
+        android:title="Salary Per Hour">
+        <Preference
+            android:key="@string/salary_key"
+            android:layout="@layout/demo"
+            android:title="25$" />
 
-        >
-    </Preference>
     </PreferenceCategory>
-    <SwitchPreferenceCompat
-        android:defaultValue="@string/auto_scan_boolean"
-        android:key="@string/auto_scan_key"
-        android:summary="@string/auto_scan"
-        android:title="Auto Re-Scan"></SwitchPreferenceCompat>
-    <SwitchPreferenceCompat
-        android:defaultValue="@string/clear_cache_boolean"
-        android:key="@string/clear_cache_key"
-        android:summary="Clear all activity images cache"
-        android:title="Cache Thumbnail"></SwitchPreferenceCompat>
 
-    <ListPreference
-        android:summary="@string/hardware_summary"
-        android:title="Hardware Acceleration"
-         android:entries="@array/hardware_array"
-        android:entryValues="@array/hardware_values"
-        android:key="@string/hardware_key"
-        >
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preference_text"
+        android:title="Job Sector">
+        <Preference
+            android:key="@string/job_sector_key"
+            android:layout="@layout/demo"
+            android:title="Business" />
 
-    </ListPreference>
-    <Preference
-        android:key="@string/quit_key"
-         android:title="Quit and restart application">
-    </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preference_text"
+        android:title="Privacy Settings">
+        <Preference
+            android:key="@string/privacy_key"
+            android:layout="@layout/demo"
+            android:title="change password" />
 
-    <Preference
-        android:key="@string/reset_key"
-        android:summary="Reset options to default"
-        android:title="Reset">
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preference_text"
+        android:title="Notification Settings">
+        <Preference
+            android:key="@string/notification_key"
+            android:layout="@layout/notification_demo"
+            android:title="turn on the notification" />
 
+    </PreferenceCategory>
 
-    </Preference>
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preference_text"
+        android:title="About app">
+        <Preference
+            android:key="@string/terms_key"
+            android:layout="@layout/about_app_demo"
+            android:title="@string/terms_text" />
+        <Preference
+            android:key="@string/privacy_policy_key"
+            android:layout="@layout/about_app_demo"
+            android:title="Privacy Policy" />
+        <Preference
+            android:key="@string/share_key"
+            android:layout="@layout/notification_demo"
+            android:title="Share App" />
+        <Preference
+            android:key="@string/delete_account_key"
+            android:layout="@layout/notification_demo"
+            android:title="Delete Account" />
+        <Preference
+            android:key="@string/signout_key"
+            android:layout="@layout/signout_demo"
+            android:title="Signout" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
