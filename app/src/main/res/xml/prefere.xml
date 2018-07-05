@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Salary Per Hour"
+        android:key="pref_key_storage_settings">
+    <Preference
+        android:key="@string/language_key"
+        android:summary="System Default Language"
+        android:title="Language"
+        android:layout="@layout/demo"
+
+        >
+    </Preference>
+    </PreferenceCategory>
+    <SwitchPreferenceCompat
+        android:defaultValue="@string/auto_scan_boolean"
+        android:key="@string/auto_scan_key"
+        android:summary="@string/auto_scan"
+        android:title="Auto Re-Scan"></SwitchPreferenceCompat>
+    <SwitchPreferenceCompat
+        android:defaultValue="@string/clear_cache_boolean"
+        android:key="@string/clear_cache_key"
+        android:summary="Clear all activity images cache"
+        android:title="Cache Thumbnail"></SwitchPreferenceCompat>
+
+    <ListPreference
+        android:summary="@string/hardware_summary"
+        android:title="Hardware Acceleration"
+         android:entries="@array/hardware_array"
+        android:entryValues="@array/hardware_values"
+        android:key="@string/hardware_key"
+        >
+
+    </ListPreference>
+    <Preference
+        android:key="@string/quit_key"
+         android:title="Quit and restart application">
+    </Preference>
+
+    <Preference
+        android:key="@string/reset_key"
+        android:summary="Reset options to default"
+        android:title="Reset">
+
+
+    </Preference>
+
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="reset_key">reset_key</string>
+    <string name="language_key">lang_key</string>
+    <string name="auto_scan_boolean">true</string>
+
+    <string name="quit_key">quit_key</string>
+    <string name="hardware_key">hardware_key</string>
+    <string name="clear_cache_boolean">true</string>
+    <string name="auto_scan_key">auto_scan_key</string>
+    <string name="clear_cache_key">clear_cache</string>
+    <string name="dialog_key">dialog_key</string>
+    <string name="auto_scan">When starting the app,auto scan files added</string>
+    <string name="hardware_summary">Disable:better stability.
+                                    Decoding:may improve performance.
+                                    Full: may improve performance further.</string>
+
+</resources>
